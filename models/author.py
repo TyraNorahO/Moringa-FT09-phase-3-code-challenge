@@ -2,6 +2,8 @@ class Author:
     def __init__(self, id, name):
         self.id = id
         self.name = name
+        self._articles = []
 
-    def __repr__(self):
-        return f'<Author {self.name}>'
+    def articles(self):
+        return self._articles
+
